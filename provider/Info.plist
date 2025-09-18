@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<!-- パスワードオプションの画面でチェックをつけた時にCustom UIを呼び出すためのオプション -->
+			<key>ASCredentialProviderExtensionShowsConfigurationUI</key>
+			<true/>
+
+			<key>ASCredentialProviderExtensionCapabilities</key>
+			<dict>
+				<!-- パスキーを作成できるようにするためのオプション -->
+				<key>ProvidesPasskeys</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>NSExtensionMainStoryboard</key>
+		<string>MainInterface</string>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.authentication-services-credential-provider-ui</string>
+<!--
+		<key>NSExtensionPrincipalClass</key>
+		<string>CredentialProviderViewController</string>
+-->
+	</dict>
+</dict>
+</plist>
